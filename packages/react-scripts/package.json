@@ -1,6 +1,6 @@
 {
   "name": "@jpaakko/react-scripts",
-  "version": "5.0.0",
+  "version": "5.0.0-fork.1.0.0",
   "description": "Configuration and scripts for Create React App.",
   "repository": {
     "type": "git",
