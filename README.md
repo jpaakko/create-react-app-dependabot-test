@@ -2,6 +2,18 @@
 
 This repository is used for reproducing a Dependabot bug.
 
+## Fork versioning
+
+These packages use semantic versioning with a [post-release indicator](https://github.com/semver/semver/issues/17#issuecomment-31269728).
+In practice, the following versioning schema should be used:
+
+The versions should follow the format `x.y.z-fork.i.j.k`, where `x`, `y` and `z` should be the major, minor, and patch
+versions of the original `react-scripts` package version this version is based on. Additionally, `i`, `j` and `k` should
+be the major, minor, and patch versions _of this fork_, starting with `1.0.0`. Whenever an independent modification (not
+related to update in the original `react-scripts`) is made, `i`, `j` and `k` should be updated according to the semantic
+versioning practices. For instance, if a breaking change is made on top of `@jpaakko/react-scripts` version
+`5.0.0-fork.1.0.0`, its version should be `5.0.0-fork.2.0.0`.
+
 <img alt="Logo" align="right" src="https://create-react-app.dev/img/logo.svg" width="20%" />
 
 Create React apps with no build configuration.
